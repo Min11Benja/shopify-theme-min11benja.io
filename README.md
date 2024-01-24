@@ -1,4 +1,4 @@
-# theme-name
+# min11benja Shopify theme
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&colorA=338fbb&colorB=1c1c1c&logoColor=ffffff)](https://github.com/odestry/.github/blob/main/CONTRIBUTING.md)
 [![CI](https://img.shields.io/github/actions/workflow/status/odestry/theme-starter/ci.yml?style=flat&label=CI&colorA=338fbb&colorB=1c1c1c&logoColor=ffffff)](https://github.com/odestry/theme-starter/blob/main/.github/workflows/ci.yml)
@@ -39,12 +39,19 @@ store = "john-apparel.myshopify.com"
 ```
 
 3. Start the development server
-
 ```bash
-npm run dev
+shopify theme dev --store {your.store.name.shopify.com}
 ```
 
 After authenticating, this will start a local development server running at `https://localhost:9292` that you can use to preview your changes.
+
+4. Start the Vite compiler for Tailwind
+then in a seperate terminal run the following command
+```bash
+npm run watch
+```
+
+You should now be able to see your html elements with tailwind classes working
 
 ## Tools
 
